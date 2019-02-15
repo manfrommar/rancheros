@@ -1,8 +1,10 @@
 #cloud-config
 
+hostname: node-host-01
+
 rancher:
   docker:
-    engine: docker-17.03.2-ce
+    engine: docker-18.09.2-ce
   network:
     interfaces:
       eth0:
