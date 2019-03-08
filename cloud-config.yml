@@ -1,7 +1,10 @@
 #cloud-config
 
+hostname: node-1
+
 rancher:
-  password: root99
+  docker:
+    engine: docker-18.09.2
   network:
     interfaces:
       eth0:
@@ -12,5 +15,7 @@ rancher:
       - 8.8.8.8
       - 8.8.4.4
 
+  console: ubuntu
 
-  
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAumBjm0A3sJnaQjh/ODzXMu4kG8anwLBCLUn0ZWIwMw7e4dSjkma9Yrb+4/J6L8v4km11/ZNmHnbjyNpeXE4smr4rmqPo26qzYB7xVIksrXsNv6XiBHZxGsjECSVztjK1PmKxlwY2iD3znGRU3e6JL16XUBITp6PTw6qm0rTecjl+MgqdhOZo6lR2u3Kc4EjusGtJbnC30LSKxdYeyLl9zq78GIehQoY559y7PrI7bog4NVm2HXtqLJEeIESykeDGRddnjX0Y0GIEjjY/eGC5xobBIil2XTXLMdFRONWnQ0FQuCrq61zMf/Ox13cCEI3vEkcAziorzZxYF5Ye1aB9XQ== rsa-key-20160726 
