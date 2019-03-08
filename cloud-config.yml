@@ -1,6 +1,7 @@
 #cloud-config
 
 rancher:
+  password: root99
   docker:
     engine: docker-18.09.2
   network:
@@ -12,8 +13,6 @@ rancher:
       nameservers:
       - 8.8.8.8
       - 8.8.4.4
-
-  console: ubuntu
 
 
   
