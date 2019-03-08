@@ -2,8 +2,6 @@
 
 rancher:
   password: root99
-  docker:
-    engine: docker-18.09.2
   network:
     interfaces:
       eth0:
