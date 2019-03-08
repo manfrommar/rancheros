@@ -1,7 +1,5 @@
 #cloud-config
 
-hostname: node-
-
 rancher:
   docker:
     engine: docker-18.09.2
