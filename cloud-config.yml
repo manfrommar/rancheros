@@ -11,6 +11,8 @@ rancher:
         mtu: 1500
         dhcp: false
     dns:
+      search:
+      - virtual.local
       nameservers:
       - 192.168.1.1
       - 8.8.8.8
